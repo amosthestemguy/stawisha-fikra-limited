@@ -1,0 +1,12 @@
+{
+  "name": "Stawisha Fikra Limited",
+  "short_name": "Stawisha Fikra",
+  "description": "AI and digital-skills training from Kenya.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f2",
+  "theme_color": "#3b49f5",
+  "icons": [
+    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}
