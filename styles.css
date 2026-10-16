@@ -86,6 +86,15 @@ h2 { font: 700 clamp(2.25rem, 4.3vw, 4.6rem)/1.03 var(--serif); letter-spacing: 
 .purpose-copy { padding-top: .8rem; color: #424a60; font-size: 1.03rem; }
 .purpose-copy p + p { margin-top: 1.25rem; }
 
+.goals { padding: clamp(4.5rem, 8vw, 7.5rem) max(32px, calc((100% - 1380px)/2)); background: var(--blue); color: #fff; }
+.goals-wrap { max-width: 1380px; margin: auto; display: grid; grid-template-columns: 1.1fr .7fr; gap: clamp(2rem, 9vw, 10rem); border-top: 1px solid rgba(255,255,255,.35); padding-top: 2.4rem; }
+.goals .eyebrow { color: #e2e5ff; }
+.goals .eyebrow span { background: var(--gold); }
+.goals h2 { max-width: 760px; margin-bottom: 0; }
+.goals-copy { align-self: end; color: #edf0ff; font-size: 1.02rem; line-height: 1.8; }
+.goals-copy p { margin-bottom: 1.25rem; }
+.goals-copy p:last-child { margin-bottom: 0; color: #fff; font-weight: 800; }
+
 .audiences { padding: clamp(4.5rem, 8vw, 7.5rem) max(32px, calc((100% - 1380px)/2)); background: var(--ink); color: #f7f7f2; }
 .audience-header { max-width: 1380px; margin: auto; display: grid; grid-template-columns: 1.1fr .55fr; gap: 4rem; align-items: end; }
 .audience-header .eyebrow { color: #bbc1db; }
@@ -155,7 +164,7 @@ h2 { font: 700 clamp(2.25rem, 4.3vw, 4.6rem)/1.03 var(--serif); letter-spacing: 
   .hero, .section-frame, .company, .name-band { width: min(100% - 40px, 1380px); }
   .hero { grid-template-columns: 1fr; padding-top: 5rem; }
   .hero-art { min-height: 410px; max-width: 580px; justify-self: center; width: 100%; }
-  .purpose-layout, .audience-header, .company { grid-template-columns: 1fr; gap: 2rem; }
+  .purpose-layout, .goals-wrap, .audience-header, .company { grid-template-columns: 1fr; gap: 2rem; }
   .capability { grid-template-columns: 20px minmax(0, 1fr) 20px; }
   .education { grid-template-columns: 1fr; min-height: auto; }
   .education-marker { position: absolute; top: -.2rem; right: 1.2rem; opacity: .28; }
