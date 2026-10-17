@@ -138,6 +138,30 @@ h2 { font: 700 clamp(2.25rem, 4.3vw, 4.6rem)/1.03 var(--serif); letter-spacing: 
 .company-facts > div { display: grid; grid-template-columns: 36% 1fr; gap: 1.2rem; padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
 .company-facts dt { color: #68708a; font: 500 .65rem/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .company-facts dd { margin: 0; color: #252b3d; font-weight: 700; font-size: .88rem; }
+.company-link { color: var(--blue); }
+.company-link:hover, .company-link:focus-visible { text-decoration: underline; }
+
+.certificate-page .site-header { margin-bottom: 0; }
+.certificate-hero { padding: clamp(3rem, 7vw, 6.5rem) 0 clamp(4rem, 8vw, 7rem); }
+.back-link { display: inline-flex; gap: .65rem; margin-bottom: clamp(2.5rem, 6vw, 5rem); color: #56607b; font: 500 .7rem/1 var(--mono); letter-spacing: .04em; }
+.back-link:hover, .back-link:focus-visible { color: var(--blue); }
+.certificate-hero h1 { max-width: 900px; margin-bottom: 1.35rem; font-size: clamp(3.7rem, 7vw, 7.4rem); }
+.certificate-lede { max-width: 670px; margin-bottom: 3rem; color: #475067; font-size: clamp(1.05rem, 1.7vw, 1.28rem); line-height: 1.75; }
+.certificate-facts { max-width: 900px; margin: 0 0 2.5rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.certificate-facts > div { min-height: 104px; padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.certificate-facts > div:nth-child(odd) { padding-right: 2rem; }
+.certificate-facts > div:nth-child(even) { padding-left: 2rem; border-left: 1px solid var(--line); }
+.certificate-facts dt { margin-bottom: .65rem; color: #68708a; font: 500 .65rem/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.certificate-facts dd { margin: 0; color: #252b3d; font-weight: 800; font-size: 1rem; }
+.certificate-actions { display: flex; flex-wrap: wrap; gap: .85rem; }
+.certificate-document { padding: clamp(4.5rem, 8vw, 8rem) max(32px, calc((100% - 1380px)/2)); background: var(--ink); color: #fff; }
+.certificate-document-heading { max-width: 800px; margin: 0 auto 3.5rem; text-align: center; }
+.certificate-document-heading .section-kicker { color: #bbc1db; }
+.certificate-document-heading h2 { margin-bottom: 1.3rem; }
+.certificate-document-heading > p:last-child { margin: 0 auto; max-width: 670px; color: #c3c8db; font-size: .93rem; line-height: 1.75; }
+.certificate-frame { width: min(100%, 920px); margin: auto; padding: clamp(.7rem, 1.5vw, 1.2rem); background: #fff; box-shadow: 0 28px 70px rgba(0,0,0,.32); }
+.certificate-frame img { width: 100%; height: auto; border: 1px solid #d8d8d8; }
+.certificate-frame figcaption { margin: .85rem .2rem .1rem; color: #4e566d; font: 500 .64rem/1.5 var(--mono); letter-spacing: .04em; text-align: center; }
 
 .contact { position: relative; min-height: 490px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .65fr); gap: 5rem; align-items: center; padding: clamp(3rem, 7vw, 7rem) max(32px, calc((100% - 1380px)/2)); background: var(--blue); color: #fff; overflow: hidden; }
 .contact-sun { position: absolute; top: -15rem; right: -9rem; width: 39rem; height: 39rem; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; box-shadow: 0 0 0 4rem rgba(255,255,255,.06), 0 0 0 8rem rgba(255,255,255,.05); }
@@ -165,6 +189,7 @@ h2 { font: 700 clamp(2.25rem, 4.3vw, 4.6rem)/1.03 var(--serif); letter-spacing: 
   .hero { grid-template-columns: 1fr; padding-top: 5rem; }
   .hero-art { min-height: 410px; max-width: 580px; justify-self: center; width: 100%; }
   .purpose-layout, .goals-wrap, .audience-header, .company { grid-template-columns: 1fr; gap: 2rem; }
+  .certificate-facts { max-width: 760px; }
   .capability { grid-template-columns: 20px minmax(0, 1fr) 20px; }
   .education { grid-template-columns: 1fr; min-height: auto; }
   .education-marker { position: absolute; top: -.2rem; right: 1.2rem; opacity: .28; }
@@ -200,6 +225,12 @@ h2 { font: 700 clamp(2.25rem, 4.3vw, 4.6rem)/1.03 var(--serif); letter-spacing: 
   .education { width: min(100% - 32px, 1380px); padding: 4.5rem 1.5rem; }
   .company { padding-bottom: 5rem; }
   .company-facts > div { grid-template-columns: 1fr; gap: .45rem; }
+  .certificate-hero { padding-top: 2.5rem; }
+  .certificate-hero h1 { font-size: clamp(3.1rem, 15vw, 4.7rem); }
+  .certificate-facts { grid-template-columns: 1fr; }
+  .certificate-facts > div { min-height: auto; }
+  .certificate-facts > div:nth-child(odd), .certificate-facts > div:nth-child(even) { padding: 1rem 0; border-left: 0; }
+  .certificate-document { padding: 4.5rem 16px; }
   .contact { grid-template-columns: 1fr; gap: 2rem; padding: 4.5rem 16px; }
   .site-footer { width: min(100% - 32px, 1380px); grid-template-columns: 1fr; gap: 1rem; }
   .site-footer > p:last-child { grid-column: auto; }
